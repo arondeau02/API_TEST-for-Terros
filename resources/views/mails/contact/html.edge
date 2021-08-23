@@ -1,0 +1,17 @@
+@layout('mails/base')
+
+@section('title')
+  Nouvelle demande de contact
+@endsection
+
+@section('content')
+De: {{ name }} <br>
+Sujet: {{ subject }} <br><br>
+Message: <br><br>
+{{ message }}
+
+<br><br><br>
+
+Informations de contact: <br>
+Email: {{ email }} | Téléphone: {{ phone }}
+@endsection

@@ -1,0 +1,13 @@
+@layout('mails/base')
+
+@section('content')
+Bonjour {{ user.firstname }} ! <br><br>
+Quelqu'un a demandé la réinitialisation de votre mot de passe. Vous pouvez le faire en suivant ce lien. <br><br>
+
+
+<a href="{{ link }}" class="link" target="_blank" rel="noopener">Réinitialiser mon mot de passe</a>
+
+Si vous n'êtes pas à l'origine de la création de ce compte, ignorez cet email, le compte sera automatiquement supprimé. <br>
+Le lien est valable 30 min
+
+@endsection
